@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insights Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Fictional Personality Survey</h1>
+    <p id="description">Share your details and find out your fictional personality!</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label id ="name-label" for="name">Name:
+          <input required id="name" type="text" placeholder="enter you name"/>
+        </label>
+        <label id="email-label" for="email">Email ID:
+          <input id="email" type="email" required placeholder="enter valid email ID"/>
+        </label>
+        <label id="number-label" for="number">Mobile Number(optional):
+          <input id="number" type="number" min=9 max=9 placeholder="enter mobile number"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Choose your superpower:
+          <select id="dropdown">
+            <option>Select any one</option>
+            <option>Detect free wedding food</option>
+            <option>Remember every relative</option>
+            <option>Ability to summon a chaiwala</option>
+            <option> Clap out the mosquito</option>
+            <option>Summon rain during cricket</option>
+            <option>Invisible in traffic jams</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Select you Gender (not both):
+        <label> 
+          <input type="radio" name="female" value="female" class="inline" />Female
+        </label>
+        <label>
+          <input type="radio" name="female" value="male" class="inline"/> Male
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Which one is you favourite anime character(you can pick multiples)
+                  <label><input class="inline" type="checkbox" value="checkbox1"/>Saitama</label>
+          <label>
+          <input class="inline" type="checkbox" value="checkbox2"/>
+          Makunouchi Ippo
+          </label>
+          <label>
+          <input class="inline" type="checkbox" value="checkbox3"/>
+          Koro-sensei
+          </label>
+          <label>
+          <input class="inline" type="checkbox" value="checkbox4"/>
+          Luffy
+          </label>
+          <input class="inline" type="checkbox" value="checkbox5"/>
+          Anya Forger
+          <label>
+          <input class="inline" type="checkbox" value="checkbox6"/>Gojo
+        </label>
+      </fieldset>
+        <label>Any Suggestions?
+          <textarea id="suggestions" rows=5 cols=30></textarea>
+        </label>
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
